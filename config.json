@@ -35,8 +35,7 @@
       {
         "label": "Invite Bot",
         "href": "/invite",
-        "type": "secondary",
-        "icon": "discord"
+        "type": "secondary"
       }
     ]
   },
@@ -47,8 +46,7 @@
       {
         "label": "Add to Discord",
         "href": "/invite",
-        "type": "primary",
-        "icon": "external"
+        "type": "primary"
       }
     ]
   },
@@ -88,7 +86,7 @@
         "type": "widget",
         "data": {
           "currentSong": {
-            "title": "Ice",
+            "title": "Jhol",
             "artist": "Ice",
             "cover": "images/backtome.jpg",
             "duration": "3:45",
@@ -414,14 +412,12 @@
       {
         "label": "Add to Discord",
         "href": "/invite",
-        "type": "primary",
-        "icon": "external"
+        "type": "primary"
       },
       {
         "label": "Join Community",
         "href": "/support",
-        "type": "secondary",
-        "icon": "chat"
+        "type": "secondary"
       }
     ]
   },
