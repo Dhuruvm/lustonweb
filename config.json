@@ -1,0 +1,502 @@
+{
+  "site": {
+    "title": "lust",
+    "description": "The only aesthetic multi-functional Discord bot you need.",
+    "url": "https://lust.bot.nu/",
+    "siteName": "lust.bot.nu",
+    "themeColor": "B3A4C8",
+    "favicon": "/favicon.ico"
+  },
+  "branding": {
+    "logo": {
+      "primary": "images/lustav.png",
+      "favicon": "images/favicon.ico",
+      "size": "40x40"
+    },
+    "colors": {
+      "primary": "#B3A4C8",
+      "secondary": "#1E1F1F",
+      "background": "#0D0D0D",
+      "text": "#FFFFFF",
+      "textSecondary": "#ZINC-400"
+    }
+  },
+  "navigation": {
+    "main": [],
+    "secondary": [
+      {
+        "label": "Status",
+        "href": "/status",
+        "icon": "status",
+        "live": true
+      }
+    ],
+    "cta": [
+      {
+        "label": "Invite Bot",
+        "href": "/invite",
+        "type": "secondary",
+        "icon": "discord"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Elevate your Server with lust",
+    "subtitle": "Trusted by 50+ servers and 200k+ users, seamlessly blending functionality with style.",
+    "buttons": [
+      {
+        "label": "Add to Discord",
+        "href": "/invite",
+        "type": "primary",
+        "icon": "external"
+      }
+    ]
+  },
+  "statistics": {
+    "realtime": false,
+    "apiEndpoint": "https://api.lust.bot.nu/stats",
+    "counters": [
+      {
+        "label": "Active Servers",
+        "value": 50,
+        "key": "servers",
+        "animated": true,
+        "fallback": 50
+      },
+      {
+        "label": "Total Users", 
+        "value": 200000,
+        "key": "users",
+        "animated": true,
+        "fallback": 200000
+      },
+      {
+        "label": "Daily Commands",
+        "value": 40900,
+        "key": "commands",
+        "animated": true,
+        "fallback": 40900
+      }
+    ]
+  },
+  "features": {
+    "showcase": [
+      {
+        "id": "music-player",
+        "title": "Music Player",
+        "description": "High-quality music playback with advanced controls",
+        "type": "widget",
+        "data": {
+          "currentSong": {
+            "title": "Ice",
+            "artist": "Ice",
+            "cover": "images/backtome.jpg",
+            "duration": "3:45",
+            "progress": "2:14"
+          },
+          "queue": [
+            {
+              "title": "9",
+              "artist": "Drake",
+              "cover": "images/9.png"
+            },
+            {
+              "title": "Chanel",
+              "artist": "Frank Ocean", 
+              "cover": "images/chanel.jpg"
+            },
+            {
+              "title": "Fourth of July",
+              "artist": "Sufjan Stevens",
+              "cover": "images/fourthofjuly.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "id": "moderation",
+        "title": "Advanced Moderation",
+        "description": "Keep your server safe with powerful moderation tools, auto-mod, and raid protection.",
+        "icon": "shield",
+        "features": [
+          {
+            "name": "Auto-mod",
+            "enabled": true
+          },
+          {
+            "name": "Raid Protection", 
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "id": "leveling",
+        "title": "Level System",
+        "description": "Reward active members with custom roles and perks. Members earn XP through chat activity, voice time, and invites.",
+        "icon": "star",
+        "data": {
+          "currentLevel": 5,
+          "xp": 15420,
+          "xpRequired": 20000,
+          "stats": {
+            "messages": "1.2k",
+            "roles": 4
+          }
+        }
+      },
+      {
+        "id": "analytics",
+        "title": "Server Analytics",
+        "description": "Track your server's growth and engagement. Monitor member activity, message frequency, and user retention over time.",
+        "icon": "chart",
+        "chartData": [40, 65, 45, 50, 80, 35, 70]
+      },
+      {
+        "id": "community",
+        "title": "Community Hub",
+        "description": "Create a welcoming space for your community with custom welcome messages, role assignment, and member introductions.",
+        "icon": "users",
+        "stats": {
+          "newMembersToday": 24,
+          "welcomeRate": "98%"
+        }
+      }
+    ]
+  },
+  "detailedFeatures": [
+    {
+      "id": "economy",
+      "title": "Economy System",
+      "description": "Advanced economy with custom shops, trading, gambling, and item management",
+      "icon": "terminal",
+      "highlights": [
+        {
+          "title": "Custom Currency",
+          "description": "Create your own economy",
+          "icon": "dollar"
+        },
+        {
+          "title": "Real-time Trading",
+          "description": "Player-to-player market",
+          "icon": "lightning"
+        }
+      ]
+    },
+    {
+      "id": "xp-leveling",
+      "title": "XP & Leveling",
+      "description": "Dynamic level system with custom rewards, roles, and progression paths",
+      "icon": "plus",
+      "highlights": [
+        {
+          "title": "Auto Roles",
+          "description": "Level-based rewards",
+          "icon": "star"
+        },
+        {
+          "title": "Custom XP Rules",
+          "description": "Tailored progression",
+          "icon": "settings"
+        }
+      ]
+    },
+    {
+      "id": "music-voice",
+      "title": "Music & Voice",
+      "description": "High-quality music playback with advanced controls and voice features",
+      "icon": "music",
+      "highlights": [
+        {
+          "title": "Multiple Sources",
+          "description": "YouTube, Spotify & more",
+          "icon": "music"
+        },
+        {
+          "title": "Audio Effects",
+          "description": "Filters & equalizer",
+          "icon": "sliders"
+        }
+      ]
+    },
+    {
+      "id": "advanced-moderation",
+      "title": "Advanced Moderation",
+      "description": "Comprehensive moderation tools with auto-mod, raid protection, and customizable filters",
+      "icon": "plus",
+      "grid": [
+        {
+          "title": "Anti-Raid",
+          "description": "Server protection",
+          "icon": "shield"
+        },
+        {
+          "title": "Auto-Mod",
+          "description": "Smart filtering",
+          "icon": "robot"
+        },
+        {
+          "title": "Custom Rules",
+          "description": "Your settings",
+          "icon": "settings"
+        }
+      ]
+    },
+    {
+      "id": "logs-analytics",
+      "title": "Logs & Analytics",
+      "description": "Detailed server activity tracking and analytics dashboard",
+      "icon": "document",
+      "highlights": [
+        {
+          "title": "Activity Insights",
+          "description": "Real-time tracking",
+          "icon": "chart"
+        },
+        {
+          "title": "Growth Metrics",
+          "description": "Member analytics",
+          "icon": "trending"
+        }
+      ]
+    }
+  ],
+  "performance": {
+    "title": "Setting New Standards",
+    "description": "Experience industry-leading performance and reliability that sets us apart from the competition",
+    "metrics": [
+      {
+        "value": "19",
+        "unit": "ms",
+        "title": "Fastest Response Time",
+        "description": "While others take 200ms+, we deliver at lightning speed"
+      },
+      {
+        "value": "99.9",
+        "unit": "%",
+        "title": "Highest Uptime",
+        "description": "Enterprise-grade reliability you can count on"
+      },
+      {
+        "value": "40.9",
+        "unit": "K+",
+        "title": "Daily Commands",
+        "description": "Trusted by millions for reliable performance"
+      },
+      {
+        "value": "100",
+        "unit": "%",
+        "title": "Security Coverage",
+        "description": "Complete protection with anti-raid, spam detection, and scam prevention",
+        "details": [
+          {
+            "label": "Anti-Raid",
+            "status": "Active"
+          },
+          {
+            "label": "Auto-Mod",
+            "status": "24/7"
+          },
+          {
+            "label": "Threats",
+            "status": "0"
+          }
+        ]
+      },
+      {
+        "value": "30",
+        "unit": "min",
+        "title": "Average Response Time",
+        "description": "24/7 support team ready to help with any questions or issues",
+        "details": [
+          {
+            "label": "Support Hours",
+            "status": "24/7"
+          },
+          {
+            "label": "Team Size",
+            "status": "5+"
+          }
+        ]
+      }
+    ]
+  },
+  "monitoring": {
+    "title": "Real-time Monitoring",
+    "description": "Keep track of your server's activity with comprehensive logging and monitoring tools",
+    "features": [
+      {
+        "id": "server-logging",
+        "title": "Server Logging",
+        "description": "Track member activity, server changes, and moderation actions in real-time",
+        "type": "logs",
+        "sampleLogs": [
+          {
+            "type": "member_update",
+            "title": "Member Updated",
+            "description": "Server avatar changed",
+            "time": "11:38 PM",
+            "avatar": "images/lustav.png"
+          },
+          {
+            "type": "member_join",
+            "title": "Member Joined",
+            "description": "Account created 24 days ago",
+            "time": "11:45 PM",
+            "avatar": "images/lustav.png"
+          },
+          {
+            "type": "member_leave",
+            "title": "Member Left",
+            "description": "Was member for 2 months",
+            "time": "12:12 AM",
+            "avatar": "images/lustav.png"
+          },
+          {
+            "type": "role_add",
+            "title": "Role Added",
+            "description": "Moderator role assigned",
+            "time": "10:22 PM",
+            "avatar": "images/lustav.png"
+          }
+        ]
+      },
+      {
+        "id": "auto-pfps",
+        "title": "Auto PFPs",
+        "description": "Automatically update your profile picture with curated images every minute",
+        "type": "gallery",
+        "images": [
+          "images/lust-auto1.jpg",
+          "images/lust-auto2.jpg",
+          "images/lust-auto3.jpg",
+          "images/lust-auto4.jpg"
+        ]
+      },
+      {
+        "id": "instagram-reels",
+        "title": "Instagram Reels",
+        "description": "Download and share Instagram reels directly in your server",
+        "type": "demo",
+        "mockData": {
+          "user": "Ice",
+          "command": "repost instagram",
+          "preview": "images/lust-cover.webp"
+        }
+      },
+      {
+        "id": "username-tracking",
+        "title": "Username Tracking",
+        "description": "Get notified when desired usernames become available",
+        "type": "notification",
+        "sample": {
+          "username": "femurs",
+          "status": "dropped",
+          "availableIn": "14 days"
+        }
+      },
+      {
+        "id": "vanity-tracking",
+        "title": "Vanity Tracking", 
+        "description": "Monitor vanity URLs and get instant notifications when they're available",
+        "type": "notification",
+        "sample": {
+          "vanity": "lust",
+          "status": "dropped",
+          "availableIn": "14 days"
+        }
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform Your Server?",
+    "description": "Join thousands of servers already using lust to create engaging, well-managed communities. Get started in seconds.",
+    "buttons": [
+      {
+        "label": "Add to Discord",
+        "href": "/invite",
+        "type": "primary",
+        "icon": "external"
+      },
+      {
+        "label": "Join Community",
+        "href": "/support",
+        "type": "secondary",
+        "icon": "chat"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 lust. All rights reserved.",
+    "links": [
+      {
+        "label": "Invite",
+        "href": "/invite"
+      },
+      {
+        "label": "Support",
+        "href": "https://discord.gg/qURDwdUQYf"
+      },
+      {
+        "label": "Terms",
+        "href": "/terms"
+      },
+      {
+        "label": "Privacy",
+        "href": "/privacy"
+      }
+    ]
+  },
+  "api": {
+    "baseUrl": "https://api.lust.bot.nu",
+    "endpoints": {
+      "status": "/status",
+      "stats": "/stats",
+      "verify": "/verify"
+    },
+    "refreshInterval": 30000,
+    "offline": true,
+    "fallbackMode": true
+  },
+  "animations": {
+    "enabled": true,
+    "scrollReveal": true,
+    "countUp": true,
+    "slideDelay": 200
+  },
+  "seo": {
+    "keywords": ["discord bot", "moderation", "music", "leveling", "economy"],
+    "author": "lust team",
+    "robots": "index, follow"
+  },
+  "analytics": {
+    "enabled": true,
+    "providers": {
+      "cloudflare": {
+        "token": "62a04ac9c61c44518075dfb84319dfda"
+      }
+    }
+  },
+  "performance": {
+    "lazyLoading": true,
+    "preloadImages": [
+      "images/lustav.png",
+      "images/backtome.jpg",
+      "images/9.png", 
+      "images/chanel.jpg",
+      "images/fourthofjuly.jpg",
+      "images/lust-auto1.jpg",
+      "images/lust-auto2.jpg",
+      "images/lust-auto3.jpg",
+      "images/lust-auto4.jpg",
+      "images/adam-av.png",
+      "images/applications.svg",
+      "images/lust-cover.webp"
+    ],
+    "criticalCSS": true
+  },
+  "errorHandling": {
+    "404Page": "/404.html",
+    "fallbackImage": "images/lustav.png",
+    "retryAttempts": 3
+  }
+}
