@@ -226,9 +226,9 @@ class DynamicContentLoader {
   updateFeatureData(element, data) {
     // Update music player data
     if (data.currentSong) {
-      const songTitle = element.querySelector('.song-title, h3, .text-white.text-sm.font-medium');
-      const songArtist = element.querySelector('.song-artist, .text-zinc-400.text-sm');
-      const songCover = element.querySelector('.song-cover, img[alt*="-"]');
+      const songTitle = element.querySelector('.text-white.text-sm.font-medium');
+      const songArtist = element.querySelector('.text-zinc-400.text-sm');
+      const songCover = element.querySelector('img[alt*="-"]');
       
       if (songTitle) songTitle.textContent = data.currentSong.title;
       if (songArtist) songArtist.textContent = data.currentSong.artist;

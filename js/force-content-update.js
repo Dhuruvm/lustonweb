@@ -1,4 +1,3 @@
-
 // Force content updates for statistics and music player
 document.addEventListener('DOMContentLoaded', function() {
   // Force update statistics immediately
@@ -45,11 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    // Force music player to show Ice
+    // Force music player to show Jhol by Ice (from config)
     const musicTitle = document.querySelector('.text-white.text-sm.font-medium');
     const musicArtist = document.querySelector('.text-zinc-400.text-sm');
-    if (musicTitle && musicTitle.textContent !== 'Ice') {
-      musicTitle.textContent = 'Ice';
+    if (musicTitle && musicTitle.textContent !== 'Jhol') {
+      musicTitle.textContent = 'Jhol';
     }
     if (musicArtist && musicArtist.textContent !== 'Ice') {
       musicArtist.textContent = 'Ice';
@@ -59,22 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Run immediately
   forceUpdateStats();
 
-  // Run again after a short delay to catch any late-loading content
-  setTimeout(forceUpdateStats, 100);
-  setTimeout(forceUpdateStats, 500);
+  // Run once more after dynamic loader finishes
   setTimeout(forceUpdateStats, 1000);
-
-  // Set up a mutation observer to catch dynamic changes
-  const observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-      if (mutation.type === 'childList') {
-        setTimeout(forceUpdateStats, 10);
-      }
-    });
-  });
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
 });

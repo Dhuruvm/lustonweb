@@ -21,12 +21,7 @@
       window.performance.mark('dynamic-content-start');
     }
     
-    // Set up periodic content refresh (every 5 minutes)
-    setInterval(function() {
-      if (window.dynamicLoader) {
-        window.dynamicLoader.refresh();
-      }
-    }, 300000);
+    // Removed periodic refresh to prevent content conflicts
     
     console.log('Dynamic content system initialized');
   });
